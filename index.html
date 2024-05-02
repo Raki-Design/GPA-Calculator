@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <div class="input-section">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" placeholder="Enter Grade">
+            <label for="credits">Credits:</label>
+            <input type="number" id="credits" placeholder="Enter Credits">
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+        <div class="history-section">
+            <h2>Grades</h2>
+            <ul id="history"></ul>
+        </div>
+        <button onclick="calculateGPA()">Calculate GPA</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
